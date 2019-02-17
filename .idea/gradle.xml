@@ -9,6 +9,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/basetypes" />
+            <option value="$PROJECT_DIR$/cinemaapi" />
+            <option value="$PROJECT_DIR$/coreapi" />
+            <option value="$PROJECT_DIR$/corebase" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
