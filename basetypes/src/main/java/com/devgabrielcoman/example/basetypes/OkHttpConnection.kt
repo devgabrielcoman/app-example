@@ -4,6 +4,7 @@ import com.devgabrielcoman.example.core.base.Connection
 import com.devgabrielcoman.example.core.base.Method
 import kotlinx.coroutines.async
 import okhttp3.OkHttpClient
+import java.net.SocketException
 
 class OkHttpConnection(override val environment: Connection.Environment) : Connection {
 
@@ -32,6 +33,6 @@ class OkHttpConnection(override val environment: Connection.Environment) : Conne
 
         val response = deferred.await()
 
-        return response.body()!!.string()
+        return response.body()?.string() ?: throw SocketException()
     }
 }
